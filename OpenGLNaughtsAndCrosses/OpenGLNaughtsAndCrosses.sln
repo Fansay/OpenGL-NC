@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.40629.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "OpenGLNaughtsandCrosses", "OpenGLNaughtsandCrosses\OpenGLNaughtsandCrosses.vcxproj", "{386BF2D1-8922-4D44-A533-958AE2E6F004}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{386BF2D1-8922-4D44-A533-958AE2E6F004}.Debug|Win32.ActiveCfg = Debug|Win32
+		{386BF2D1-8922-4D44-A533-958AE2E6F004}.Debug|Win32.Build.0 = Debug|Win32
+		{386BF2D1-8922-4D44-A533-958AE2E6F004}.Release|Win32.ActiveCfg = Release|Win32
+		{386BF2D1-8922-4D44-A533-958AE2E6F004}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
