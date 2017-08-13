@@ -110,12 +110,19 @@ void drawCircle(double mousePosX, double mousePosY) {
 	double radius = 0.1;
 
 	glColor3f(1.f, 1.f, 1.f);
-	glBegin(GL_LINES);
+	glBegin(GL_TRIANGLE_FAN); //less vertexes and more efficient than GL_LINE
+	glVertex3f(mousePosX, mousePosY, 0.f);
+	while (angle < 360) {
+		glVertex3f(mousePosX + radius*sin(angle), mousePosY + radius*cos(angle), 0.f);
+		angle++;
+	}
+	glEnd();
+
+	/*glBegin(GL_LINE);
 	while (angle < 360) {
 		
 		glVertex3f(mousePosX, mousePosY, 0.f);
 		glVertex3f(mousePosX + radius*sin(angle), mousePosY + radius*cos(angle), 0.f);
-
 
 		angle++;
 	}
@@ -129,7 +136,7 @@ void drawCircle(double mousePosX, double mousePosY) {
 	glBegin(GL_LINES);
 	glVertex3f(mousePosX + radius / 2, mousePosY, 0.f);
 	glVertex3f(mousePosX - radius / 2, mousePosY, 0.f);
-	glEnd();
+	glEnd();*/
 }
 
 void mouseClick(GLFWwindow* window, int button, int action, int mods) {

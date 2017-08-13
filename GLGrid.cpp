@@ -4,6 +4,8 @@
 #include "GLGrid.h"
 #include "ImageImport.h"
 
+//change all GL_QUADS into GL_TRIANGLE
+
 GLGrid::GLGrid() {
 	backgroundColour = new float[4];
 	backgroundColour[0] = 0;
